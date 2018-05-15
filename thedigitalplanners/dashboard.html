@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard - The Digital Planners</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/modernizr-2.8.3.min.js"></script>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+		<link rel="manifest" href="favicons/manifest.json">
+		<link rel="mask-icon" href="favicons/safari-pi	nned-tab.svg" color="#30a6cb">
+		<meta name="theme-color" content="#30a6cb">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+	<body class="no-header">
+		
+		<header class="transition colour">
+			<div class="menutoggle"><span></span></div>
+			<div class="maxwidth clearfix">
+				<h1 class="transition">
+					<a href="./" class="transition">The Digital Planners</a>
+				</h1>
+				<nav class="menu transition leftmenu">
+					<ul>
+						<li><a href="how-it-works.html">How it Works</a></li>
+						<li><a href="inspiration.html">Inspiration</a></li>
+					</ul>
+				</nav>
+				<nav class="menu transition rightmenu">
+					<ul>
+						<li><a href="dashboard.html">Dashboard</a></li>
+						<li class="user">
+							<span class="icon">AJ</span>
+							<ul class="login-menu">
+								<li><span>Anthony Juma</span></li>
+								<li><a href="settings.html">Settings</a></li>
+								<li><a href="./">Log Out</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+		</header>
+
+		<section class="settings">
+			<h2>Dashboard</h2>
+			<p>Manage your events.</p>
+			<div class="maxwidth2" id="accordion">
+				<h3 class="accordion-toggle">Your Events</h3>
+				<div class="accordion-content default">
+					<div class="empty-events">
+						<img src="img/no-events.png">
+						<p>No events at the moment...</p>
+						<p><a class="button cta" onclick="showCreateEvent();">Create Event</a></p>
+					</div>
+					<div class="events">
+						
+					</div>
+				</div>
+				<h3 class="accordion-toggle">Your Invoices</h3>
+				<div class="accordion-content ">
+					<p>Invoices go here...</p>
+				</div>
+				
+			</div>
+		</section>
+
+		<footer>
+			<div class="maxwidth clearfix">
+
+				<ul class="footerlinks">
+					<li>
+						<a href="./">Home</a>
+					</li>
+
+					<li>
+						<a href="how-it-works.html">How it Works</a>
+					</li>
+
+					<li>
+						<a href="./">Become a Supplier</a>
+					</li>
+
+					<li>
+						<a href="login.html">Login</a>
+					</li>
+
+					<li>
+						<a href="get-started.html">Register</a>
+					</li>
+				</ul>
+
+				<ul class="social">
+					<li>
+						<a href="./">Facebook</a>
+					</li>
+					<li>
+						<a href="./">Twitter</a>
+					</li>
+					<li>
+						<a href="./">YouTube</a>
+					</li>
+					<li>
+						<a href="./">Instagram</a>
+					</li>
+				</ul>
+				<p>
+					&copy; The Digital Planners. All Right Reserved.
+				</p>
+			</div>
+		</footer>
+
+		<div class="overlay"></div>
+		<div class="modalbox" id="create-event">
+			<a class="close-popup" onclick="hideCreateEvent();">&times;</a>
+			<h2>Create Event</h2>
+			<p>Experience the easiest way to plan for your events.</p>
+
+			<fieldset class="fullwidth">
+				<label>Event Type</label>
+				<input type="text" name="Event Type">
+			</fieldset>
+
+			<fieldset class="fullwidth">
+				<label>Event Name</label>
+				<input type="text" name="Event Type">
+			</fieldset>
+
+			<fieldset class="fullwidth">
+				<label>Event Date</label>
+				<input type="date" name="Event Type">
+			</fieldset>
+
+			<fieldset class="fullwidth">
+				<label>Budget (KES)</label>
+				<input type="text" name="Event Type">
+			</fieldset>
+
+			<fieldset class="fullwidth">
+				<input type="submit" value="Proceed">
+			</fieldset>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
+
+
+
